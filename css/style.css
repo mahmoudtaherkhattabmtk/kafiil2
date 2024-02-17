@@ -299,8 +299,14 @@ body {
     color: #696F79;
 }
 
-.navbar-collapse .navbar-nav:last-of-type .dropdown-menu>li:hover {
-    color: #1DBF73;
+.navbar-collapse .navbar-nav:last-of-type .dropdown-menu>li:hover,
+.navbar-collapse .navbar-nav:last-of-type .dropdown-menu>li:hover a {
+    color: #1DBF73 !important;
+}
+
+.navbar-collapse .navbar-nav:last-of-type .dropdown-menu>li:last-of-type:hover a,
+.navbar-collapse .navbar-nav:last-of-type .dropdown-menu>li:last-of-type:hover i {
+    color: #F56342 !important;
 }
 
 .navbar-collapse .navbar-nav:last-of-type .dropdown-menu .toggle-theme-color li {
@@ -384,23 +390,20 @@ ul.languages li:last-of-type img {
     top: 6px;
 }
 
-.dropdown-menu li:last-of-type:hover a,
-.dropdown-menu li:last-of-type:hover i {
-    color: #F56342 !important;
-}
-
 .dropdown-menu li:hover i.fa.fa-circle {
     color: #fff !important;
 }
 
-.dropdown-menu li a{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
+.dropdown-menu li a {
     font-size: 14px;
     line-height: 120%;
     letter-spacing: 0.005em;
     color: #696F79 !important;
+}
+
+.navbar .navbar-right .chat,
+.navbar .navbar-right .notifications {
+    padding: 10px 8px;
 }
 
 /*left side content***********************************************/
@@ -780,9 +783,6 @@ input#choice-1:focus {
     all: unset;
     background: #F6F6F6;
     border-radius: 8px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0.005em;
@@ -900,19 +900,14 @@ input#choice-1:focus {
 }
 
 .boxes .box b,
-.boxes .box ol li,
 .boxes .box ul li,
 .boxes .box p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0.005em;
     color: #000000;
 }
 
-.boxes .box ol li,
 .boxes .box ul li,
 .boxes .box p {
     font-weight: 500;
@@ -932,34 +927,80 @@ input#choice-1:focus {
     font-weight: 600 !important;
 }
 
-.boxes .box ol {
-    margin-top: 16px;
-}
-
-.boxes .box ol li {
-    list-style: decimal;
-    list-style-position: inside;
-}
-
-.boxes .box:first-of-type span {
-    font-size: 16px;
-}
-
-.boxes .box:nth-of-type(2) ul {
+.boxes .box:first-of-type ul {
     padding: 16px 0 20px 0;
     display: table;
     margin: 0 auto;
+    text-align: center;
 }
 
-.boxes .box:nth-of-type(2) ul li {
+.seller {
+    padding-bottom: 0 !important;
+}
+
+.seller li:first-of-type {
+    position: relative;
+    bottom: 30px;
+    left: 40px;
+}
+
+.seller li:first-of-type i {
+    position: relative;
+    top: 15px;
+    right: 15px;
+    color: #1DBF73;
+}
+
+.seller li:first-of-type i:last-of-type {
+    left: -31px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.seller li:nth-of-type(2) i:first-of-type {
+    color: #1DBF73;
+}
+
+.seller li:nth-of-type(2),
+.seller li:nth-of-type(2) span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #8692A6 !important;
+}
+
+.seller li:nth-of-type(3) i {
+    color: #FFCB31;
+}
+
+.seller li:nth-of-type(3) i:last-of-type {
+    color: #E6EAEF;
+}
+
+.seller li:nth-of-type(3) span {
+    color: #696F79 !important;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.15px;
+}
+
+.seller li:nth-of-type(2),
+.seller li:nth-of-type(3) {
+    position: relative;
+    bottom: 10px;
+}
+
+.boxes .box:first-of-type ul li {
     display: inline;
 }
 
-.boxes .box:nth-of-type(2) ul p {
+.boxes .box:first-of-type ul p {
     margin-bottom: 32px;
 }
 
-.boxes .box:nth-of-type(2) button {
+.boxes .box:first-of-type button {
     padding: 8px 55px;
     border-radius: 8px;
     width: 100%;
@@ -969,7 +1010,7 @@ input#choice-1:focus {
     margin-top: 22px;
 }
 
-.boxes .box:nth-of-type(3) ul li {
+.boxes .box:nth-of-type(2) ul li {
     display: inline;
     font-size: 14px;
     line-height: 120%;
@@ -977,26 +1018,26 @@ input#choice-1:focus {
     color: #000000;
 }
 
-.boxes .box:nth-of-type(3) ul li i {
+.boxes .box:nth-of-type(2) ul li i {
     color: #696F79;
     margin-right: 10px;
 }
 
-.boxes .box:nth-of-type(3) ul li:last-of-type {
+.boxes .box:nth-of-type(2) ul li:last-of-type {
     float: right;
 }
 
-.boxes .box:nth-of-type(4) ul {
+.boxes .box:nth-of-type(3) ul {
     display: table;
     margin: 20px auto;
 }
 
-.boxes .box:nth-of-type(4) ul li {
+.boxes .box:nth-of-type(3) ul li {
     display: inline;
     padding: 2px;
 }
 
-.boxes .box:nth-of-type(4) ul li img {
+.boxes .box:nth-of-type(3) ul li img {
     max-width: 32px;
 }
 
@@ -1147,7 +1188,7 @@ section,
     border-radius: 50%;
 }
 
-.boxes .box:nth-of-type(2) button,
+.boxes .box:first-of-type button,
 .purshace .purshace-btn,
 .testimonials button,
 ::selection {
@@ -1192,7 +1233,10 @@ section,
 .boxes .last-box section .img-container .other-service-content span,
 .left-content .service-section p,
 .description b,
-.head {
+.head,
+.boxes .box b,
+.boxes .box ul li,
+.boxes .box p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -1216,12 +1260,20 @@ section,
 .testimonials button,
 .suggested-service .head ul .right span,
 .suggested-service .card ul li,
-.boxes .box:nth-of-type(2) button,
-.boxes .box:nth-of-type(3) ul li,
-.boxes .last-box .head .right {
+.boxes .box:first-of-type button,
+.boxes .box:nth-of-type(2) ul li,
+.boxes .last-box .head .right,
+.dropdown-menu li a {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
+}
+
+.testimonials .review textarea,
+.seller li:nth-of-type(3) span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
 }
 
 /*Media*/
@@ -1237,11 +1289,11 @@ section,
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
-    .boxes .box:nth-of-type(3) ul li {
+    .boxes .box:nth-of-type(2) ul li {
         font-size: 10px;
     }
 
-    .boxes .box:nth-of-type(4) ul li img {
+    .boxes .box:nth-of-type(3) ul li img {
         max-width: 26px;
     }
 
@@ -1347,7 +1399,7 @@ section,
 
     .dropdown-menu li:nth-of-type(3):hover a,
     .dropdown-menu li:nth-of-type(3):hover i,
-    .settings:hover a{
+    .settings:hover a {
         color: #1DBF73 !important;
     }
 }
