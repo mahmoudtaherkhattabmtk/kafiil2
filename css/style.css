@@ -984,6 +984,7 @@ input#choice-1:focus {
     font-size: 12px;
     line-height: 15px;
     letter-spacing: -0.15px;
+    font-weight: 400;
 }
 
 .seller li:nth-of-type(3),
