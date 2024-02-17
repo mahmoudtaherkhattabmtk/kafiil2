@@ -938,31 +938,31 @@ input#choice-1:focus {
     padding-bottom: 0 !important;
 }
 
-.seller li:first-of-type {
+.seller li:nth-of-type(2) {
     position: relative;
     bottom: 30px;
     left: 40px;
 }
 
-.seller li:first-of-type i {
+.seller li:nth-of-type(2) i {
     position: relative;
     top: 15px;
     right: 15px;
     color: #1DBF73;
 }
 
-.seller li:first-of-type i:last-of-type {
+.seller li:nth-of-type(2) i:last-of-type {
     left: -31px;
     font-size: 15px;
     color: #fff;
 }
 
-.seller li:nth-of-type(2) i:first-of-type {
+.seller li:nth-of-type(3) i:first-of-type {
     color: #1DBF73;
 }
 
-.seller li:nth-of-type(2),
-.seller li:nth-of-type(2) span {
+.seller li:nth-of-type(3),
+.seller li:nth-of-type(3) span {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400 !important;
@@ -971,32 +971,28 @@ input#choice-1:focus {
     color: #8692A6 !important;
 }
 
-.seller li:nth-of-type(3) i {
+.seller li:nth-of-type(4) i {
     color: #FFCB31;
 }
 
-.seller li:nth-of-type(3) i:last-of-type {
+.seller li:nth-of-type(4) i:last-of-type {
     color: #E6EAEF;
 }
 
-.seller li:nth-of-type(3) span {
+.seller li:nth-of-type(4) span {
     color: #696F79 !important;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: -0.15px;
 }
 
-.seller li:nth-of-type(2),
-.seller li:nth-of-type(3) {
+.seller li:nth-of-type(3),
+.seller li:nth-of-type(4) {
     position: relative;
     bottom: 10px;
 }
 
-.seller .seller-image {
-    all: unset !important;
-}
-
-.boxes .box:first-of-type p {
+.boxes .box:nth-of-type(2) p {
     font-size: 14px;
     line-height: 120%;
     letter-spacing: 0.005em;
