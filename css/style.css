@@ -389,6 +389,10 @@ ul.languages li:last-of-type img {
     color: #F56342 !important;
 }
 
+.dropdown-menu li:hover i.fa.fa-circle {
+    color: #fff !important;
+}
+
 /*left side content***********************************************/
 
 /*left-content*/
